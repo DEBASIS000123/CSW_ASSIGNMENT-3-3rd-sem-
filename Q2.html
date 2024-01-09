@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="C:\Users\hp\Desktop\HTML\jQueryFile\jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+        $("#single-click").click(function () {
+        $(this).hide();
+        });
+        });
+        $(document).ready(function () {
+        $("#double-click").dblclick(function () {
+        $(this).hide();
+        });
+        });
+        </script>
+</head>
+<body>
+     <p id="single-click">Click Me!</p>
+     <p id="double-click">Double Click Me!</p>
+</body>
+</html>
