@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5</title>
+    <script src="C:\Users\hp\Desktop\HTML\jQueryFile\jquery-3.7.1.js"></script>
+</head>
+<style>
+    body {
+    /* optional to write */
+    font-size: large;
+    }
+    p{
+    top: 200px;
+    position: fixed;
+    }
+    img{
+    height:180px;
+    width:300px;
+    }
+    </style>
+<body>
+    <body>
+        <!-- 1. slide down -->
+        <p id="p1">Hello C++</p>
+        <p id="p2">Hello Jquery</p>
+        
+        <button id="btn-1">Slide Down</button>
+        <button id="btn-2">Animate</button>
+        <button id="btn-3">Fade In</button>
+        <button id="btn-4">Hide</button>
+        <button id="btn-5">Show</button>
+        <button id="btn-6">Set attribute</button>
+        <button id="btn-7">Set html</button>
+        <br>
+        <img src="image1.avif" alt="" width="50px">
+        </body>
+
+    <script>
+        $(document).ready(function () {
+        $("#p1").slideUp();
+        $("#btn-1").click(function () {
+        $("#p1").slideDown();
+        });
+        });
+        $(document).ready(function () {
+        $("#btn-2").click(function () {
+        $("#p2").animate({ left: '250px' });
+        });
+        });
+        $(document).ready(function () {
+        $("#p1").fadeOut();
+        $("#btn-3").click(function () {
+        $("#p1").fadeIn();
+        });
+        });
+        $(document).ready(function () {
+        $("#btn-4").click(function () {
+        $("#p1").hide();
+        });
+        });
+        $(document).ready(function () {
+        $("#btn-5").click(function () {
+        $("#p1").show();
+        });
+        });
+        // mouse enter
+        $(document).ready(function () {
+        $("#p2").mouseenter(function () {
+        $("#p2").css({"font-size": "100px","color":"red"});
+        });
+        });
+        // mouse leave
+        $(document).ready(function () {
+        $("#p2").mouseleave(function () {
+        $("#p2").css({"font-size": "40px" ,"color":"black"});
+        });
+        });
+        $(document).ready(function () {
+        $("#p2").dblclick(function () {
+        $("#p2").css("background-color", "red");
+        });
+        $("#btn-6").click(function () {
+        $("img").attr("width", "300px");
+        });
+        $("#btn-7").click(function () {
+        $("#p2").html("Javascript is more fun than jQuery!");
+        });
+        });
+        </script>
+</body>
+</html>
