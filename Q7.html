@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7</title>
+    <script src="C:\Users\hp\Desktop\HTML\jQueryFile\jquery-3.7.1.js"></script>
+</head>
+<body>
+    <form name="form1">
+        <label for="u-name">Username:</label>
+        <input type="text" name="u-name" id="u-name">
+        <br>
+        <label for="p-word">Password:</label>
+        <input type="password" name="p-word" id="p-word">
+        <br>
+        <label for="mail-id">Email:</label>
+        <input type="email" name="mail-id" id="mail-id">
+        <br>
+        <input type="submit" value="Submit" id="btn">
+    </form>
+    <script>
+    $(function () {
+        // var usr = $("#u-name").val();
+        // var pwd = $("#p-word").val();
+        $("#btn").click(function () {
+        var usr = $("#u-name").val();
+        var pwd = $("#p-word").val();
+        if(usr == "" || pwd == "") {
+        alert("The username or password field is empty.");
+        }
+        });
+        });
+        </script>
+</body>
+
+</html>
