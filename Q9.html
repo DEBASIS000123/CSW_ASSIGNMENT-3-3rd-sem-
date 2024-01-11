@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="C:\Users\hp\Desktop\HTML\jQueryFile\jquery-3.7.1.js"></script>
+    <style>
+        #rock, #paper, #scissor {
+        border: 1px solid black;
+        border-radius: 20px;
+        cursor: pointer;
+        float: left;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Rock-paper-scissors_%28rock%29.png" alt="rock" width="150px" id="rock">
+<p>Rock</p>
+<img
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Rock-paper-scissors_%28paper%29.png/1200px-Rock-pape
+r-scissors_%28paper%29.png" alt="paper" width="150px" id="paper">
+<p>Paper</p>
+<img
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rock-paper-scissors_%28scissors%29.png/1200px-Rock-pa
+per-scissors_%28scissors%29.png" alt="scissor" width="150px" id="scissor">
+<p>Scissor</p>
+</body>
+<script>
+    const GAME = ["rock", "paper", "scissor"];
+    // let put = Math.floor(Math.random() * 3);
+    $(function () {
+    $("#rock").click(function () {
+    let put = Math.floor(Math.random() * 3);
+    if (put == 0) {
+    alert("You won!");
+    } else {
+    alert("It was a " + GAME[put] + ". Better luck next time.");
+    }
+    });
+    $("#paper").click(function () {
+    let put = Math.floor(Math.random() * 3);
+    if (put == 1) {
+    alert("You won!");
+    } else {
+    alert("It was a " + GAME[put] + ". Better luck next time.");
+    }
+    });
+    $("#scissor").click(function () {
+    let put = Math.floor(Math.random() * 3);
+    if (put == 2) {
+    alert("You won!");
+    } else {
+    alert("It was a " + GAME[put] + ". Better luck next time.");
+    }
+    });
+    });
+    </script>
+</html>
